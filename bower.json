@@ -1,0 +1,14 @@
+{
+  "name": "hibersense-test",
+  "version": "0.0.1",
+  "main": "app.js",
+  "ignore": [
+    "bower_components"
+  ],
+  "dependencies": {
+    "epoch": "^0.8.4",
+    "jquery": "^3.4.0",
+    "bootstrap": "^4.3.1"
+  },
+  "overrides": {}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hibersense Front End Challenge</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/epoch/dist/css/epoch.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">HiberSense</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 text-center">
+          <div id="gauge" class="gauge-chart border-bottom">
+            <h2>Energy Usage</h2>
+            <div class="epoch gauge-large ml-auto mr-auto"></div>
+          </div>
+
+          <div id="temperature" class="border-bottom">
+            <h2>Temperature</h2>
+            <div class="epoch ml-auto mr-auto"></div>
+          </div>
+
+          <div id="line-chart" class="border-bottom">
+            <h2>Compare Room Temperatures</h2>
+            <p>Living Room: Blue, Kitchen: Yellow, Green: Lounge</p>
+            <div class="epoch ml-auto mr-auto"></div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/bower_components/d3/d3.min.js" charset="utf-8"></script>
+    <script src="/bower_components/epoch/dist/js/epoch.js" charset="utf-8"></script>
+  </body>
+</html>
